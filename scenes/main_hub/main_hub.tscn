@@ -1,97 +1,270 @@
 [gd_scene format=3 uid="uid://ctioly4067uek"]
 
-[ext_resource type="Texture2D" uid="uid://h1et3ew30tgk" path="res://assets/placeholders/hub/stadium_background.png" id="1_1qqo0"]
+[ext_resource type="FontFile" uid="uid://h72hgatuotek" path="res://assets/fonts/Outfit-Bold.ttf" id="1_eknkn"]
+[ext_resource type="FontFile" uid="uid://7uhqwmgfm71w" path="res://assets/fonts/946-latin-wide-4.ttf" id="2_bi4pt"]
 
-[node name="MainHub" type="Control" unique_id=698398160]
-layout_mode = 3
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-grow_horizontal = 2
-grow_vertical = 2
+[sub_resource type="Theme" id="Theme_4wfe4"]
+default_font = ExtResource("1_eknkn")
 
-[node name="Background" type="TextureRect" parent="." unique_id=426564593]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -1131.0
-offset_top = -930.0
-offset_right = 1122.8777
-offset_bottom = 931.0
-grow_horizontal = 2
-grow_vertical = 2
-texture = ExtResource("1_1qqo0")
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi4pt"]
+content_margin_left = 20.0
+content_margin_right = 20.0
+bg_color = Color(0.5254902, 0.6666667, 0.10980392, 1)
+border_width_top = 2
+border_color = Color(0.6392157, 0.7921569, 0.05490196, 1)
+shadow_color = Color(0, 0, 0, 0.76862746)
+shadow_size = 2
+shadow_offset = Vector2(0, 2)
 
-[node name="Filter" type="ColorRect" parent="Background" unique_id=589062450]
-layout_mode = 1
-anchors_preset = 15
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4wfe4"]
+bg_color = Color(0.25882354, 0.5372549, 0.27450982, 1)
+border_width_left = 1
+border_width_top = 1
+border_color = Color(0.6392157, 0.7921569, 0.05490196, 1)
+shadow_color = Color(0, 0.32941177, 0, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2cb7x"]
+content_margin_left = 3.0
+content_margin_top = 1.0
+content_margin_right = 3.0
+content_margin_bottom = 1.0
+bg_color = Color(0.101960786, 0.4117647, 0.16862746, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.6392157, 0.7921569, 0.05490196, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2cb7x"]
+font = ExtResource("2_bi4pt")
+font_size = 19
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hshcj"]
+content_margin_left = 3.0
+content_margin_top = 1.0
+content_margin_right = 3.0
+content_margin_bottom = 1.0
+bg_color = Color(0.101960786, 0.1254902, 0.3137255, 1)
+border_width_left = 2
+border_width_top = 2
+border_color = Color(0, 0, 0, 1)
+shadow_color = Color(0.6392157, 0.7921569, 0.05490196, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_hshcj"]
+font = ExtResource("2_bi4pt")
+font_size = 20
+font_color = Color(1, 1, 0, 1)
+
+[node name="MainHub" type="CanvasLayer" unique_id=1408878207]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2143380276]
+anchors_preset = 10
 anchor_right = 1.0
-anchor_bottom = 1.0
 grow_horizontal = 2
-grow_vertical = 2
-color = Color(0.3764706, 0.3764706, 0.3764706, 0.6039216)
 
-[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=911426353]
-layout_mode = 1
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1616585238]
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+
+[node name="HeaderContainer" type="PanelContainer" parent="VBoxContainer" unique_id=79302732]
+layout_mode = 2
+theme = SubResource("Theme_4wfe4")
+theme_override_styles/panel = SubResource("StyleBoxFlat_bi4pt")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HeaderContainer" unique_id=739253957]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="GameModeContainer" type="VBoxContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=702222736]
+custom_minimum_size = Vector2(160, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = -6
+
+[node name="Label" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=203337197]
+layout_mode = 2
+text = "Liga"
+
+[node name="Label2" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=235281118]
+layout_mode = 2
+text = "   ManagerPro"
+
+[node name="HomeContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=505786618]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_4wfe4")
+
+[node name="Home" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/HomeContainer" unique_id=91422965]
+layout_mode = 2
+text = "Villarreal"
+horizontal_alignment = 1
+
+[node name="AwayContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=1361414533]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_4wfe4")
+
+[node name="Away" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/AwayContainer" unique_id=1974789085]
+layout_mode = 2
+text = "Logroñés"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=1467047835]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 4
+alignment = 1
+
+[node name="MatchDayContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=527084497]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_2cb7x")
+
+[node name="MatchDayLabel" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayContainer" unique_id=2026194043]
+layout_mode = 2
+text = "JORNADA"
+label_settings = SubResource("LabelSettings_2cb7x")
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="MatchDayNunmberContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=1355196878]
+custom_minimum_size = Vector2(30, 22)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_hshcj")
+
+[node name="Label3" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayNunmberContainer" unique_id=1723953658]
+layout_mode = 2
+text = "1"
+label_settings = SubResource("LabelSettings_hshcj")
+horizontal_alignment = 1
+
+[node name="Body" type="VBoxContainer" parent="." unique_id=548524236]
 anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -244.5
+offset_top = -23.0
+offset_right = 244.5
+offset_bottom = 23.0
 grow_horizontal = 2
 grow_vertical = 2
+alignment = 1
 
-[node name="StatsContainer" type="PanelContainer" parent="HBoxContainer" unique_id=246526934]
+[node name="Row1" type="HBoxContainer" parent="Body" unique_id=911426353]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/StatsContainer" unique_id=692495419]
+[node name="StatsContainer" type="PanelContainer" parent="Body/Row1" unique_id=246526934]
 layout_mode = 2
+size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="HBoxContainer/StatsContainer/VBoxContainer" unique_id=2051178744]
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row1/StatsContainer" unique_id=692495419]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=2051178744]
 layout_mode = 2
 text = "Turno de"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/StatsContainer/VBoxContainer" unique_id=573389799]
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=573389799]
 layout_mode = 2
+alignment = 1
 
-[node name="Tables" type="Label" parent="HBoxContainer/StatsContainer/VBoxContainer/HBoxContainer" unique_id=1586577865]
+[node name="Tables" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/HBoxContainer" unique_id=1586577865]
 layout_mode = 2
 text = "CLASIFICACIÓN"
 
-[node name="Results" type="Label" parent="HBoxContainer/StatsContainer/VBoxContainer/HBoxContainer" unique_id=155933137]
+[node name="Results" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/HBoxContainer" unique_id=155933137]
 layout_mode = 2
 text = "RESULTADOS"
 
-[node name="CoachContainer" type="PanelContainer" parent="HBoxContainer" unique_id=1597057035]
+[node name="CoachContainer" type="PanelContainer" parent="Body/Row1" unique_id=1597057035]
 layout_mode = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer/CoachContainer" unique_id=304398793]
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row1/CoachContainer" unique_id=304398793]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="HBoxContainer/CoachContainer/VBoxContainer" unique_id=1800683909]
+[node name="Label" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer" unique_id=1800683909]
 layout_mode = 2
 text = "ENTRENADOR"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/CoachContainer/VBoxContainer" unique_id=332333799]
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/CoachContainer/VBoxContainer" unique_id=332333799]
 layout_mode = 2
 
-[node name="LineUp" type="Label" parent="HBoxContainer/CoachContainer/VBoxContainer/HBoxContainer" unique_id=1816635846]
+[node name="LineUp" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/HBoxContainer" unique_id=1816635846]
 layout_mode = 2
 text = "ALINEACIÓN"
 
-[node name="Tactics" type="Label" parent="HBoxContainer/CoachContainer/VBoxContainer/HBoxContainer" unique_id=2096002228]
+[node name="Tactics" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/HBoxContainer" unique_id=2096002228]
 layout_mode = 2
 text = "TÁCTICAS"
 
-[node name="Rival" type="Label" parent="HBoxContainer/CoachContainer/VBoxContainer/HBoxContainer" unique_id=1366133446]
+[node name="Rival" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/HBoxContainer" unique_id=1366133446]
 layout_mode = 2
 text = "VER RIVAL"
+
+[node name="Row2" type="HBoxContainer" parent="Body" unique_id=669472376]
+layout_mode = 2
+alignment = 1
+
+[node name="MarketContainer" type="PanelContainer" parent="Body/Row2" unique_id=354124511]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row2/MarketContainer" unique_id=955380370]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Body/Row2/MarketContainer/VBoxContainer" unique_id=687358307]
+layout_mode = 2
+text = "FICHAJES"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row2/MarketContainer/VBoxContainer" unique_id=2036993014]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Body/Row2/MarketContainer/VBoxContainer/HBoxContainer" unique_id=1934551218]
+layout_mode = 2
+text = "COMPRAR"
+
+[node name="Label2" type="Label" parent="Body/Row2/MarketContainer/VBoxContainer/HBoxContainer" unique_id=1031050896]
+layout_mode = 2
+text = "VENDER"
+
+[node name="EconomyContainer" type="PanelContainer" parent="Body/Row2" unique_id=1505412176]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row2/EconomyContainer" unique_id=1828560881]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer" unique_id=1407885645]
+layout_mode = 2
+text = "FINANZAS"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row2/EconomyContainer/VBoxContainer" unique_id=723370844]
+layout_mode = 2
+alignment = 1
+
+[node name="Label" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer/HBoxContainer" unique_id=907716913]
+layout_mode = 2
+text = "CAJA"
+
+[node name="Label2" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer/HBoxContainer" unique_id=329131484]
+layout_mode = 2
+text = "DECISIONES"
