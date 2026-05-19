@@ -2,6 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://h72hgatuotek" path="res://assets/fonts/Outfit-Bold.ttf" id="1_eknkn"]
 [ext_resource type="FontFile" uid="uid://7uhqwmgfm71w" path="res://assets/fonts/946-latin-wide-4.ttf" id="2_bi4pt"]
+[ext_resource type="FontFile" uid="uid://b0dp1rkskx15o" path="res://assets/fonts/Futura Extra Black Condensed Italic.otf" id="3_bi4pt"]
 
 [sub_resource type="Theme" id="Theme_4wfe4"]
 default_font = ExtResource("1_eknkn")
@@ -59,6 +60,10 @@ shadow_offset = Vector2(1, 1)
 font = ExtResource("2_bi4pt")
 font_size = 20
 font_color = Color(1, 1, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_4wfe4"]
+font = ExtResource("3_bi4pt")
+font_size = 24
 
 [node name="MainHub" type="CanvasLayer" unique_id=1408878207]
 
@@ -268,3 +273,15 @@ text = "CAJA"
 [node name="Label2" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer/HBoxContainer" unique_id=329131484]
 layout_mode = 2
 text = "DECISIONES"
+
+[node name="Label" type="Label" parent="." unique_id=2085068760]
+offset_left = 368.0
+offset_top = -68.0
+offset_right = 592.0
+offset_bottom = 28.0
+text = "ARCADE WORLD CUPS 2:
+EL ENTRENADOR
+"
+label_settings = SubResource("LabelSettings_4wfe4")
+horizontal_alignment = 1
+vertical_alignment = 1
