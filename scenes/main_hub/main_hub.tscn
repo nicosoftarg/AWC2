@@ -7,6 +7,17 @@
 [ext_resource type="FontFile" uid="uid://dayae0mllaayf" path="res://assets/fonts/5 Text Uppercase.ttf" id="4_asv7p"]
 [ext_resource type="Texture2D" uid="uid://duwr7qrntog8a" path="res://assets/placeholders/hub/CLASIFICACION.PNG" id="5_ruua2"]
 [ext_resource type="Texture2D" uid="uid://dakc0nv73gv3x" path="res://assets/placeholders/hub/results.png" id="6_p1xbd"]
+[ext_resource type="Texture2D" uid="uid://cwa0y47bqmfj7" path="res://assets/placeholders/hub/alineacion.png" id="7_vl208"]
+[ext_resource type="Texture2D" uid="uid://c8qbeno32mbiw" path="res://assets/placeholders/hub/tactics.png" id="8_7y1o6"]
+[ext_resource type="Texture2D" uid="uid://cuc358ctv4o5l" path="res://assets/placeholders/hub/rival.png" id="9_aqdmb"]
+[ext_resource type="Texture2D" uid="uid://cb0nbehokuiui" path="res://assets/placeholders/hub/buy_player.png" id="10_tsv7u"]
+[ext_resource type="Texture2D" uid="uid://dphf8sdul8qjp" path="res://assets/placeholders/hub/sell_player.png" id="11_4sa0x"]
+[ext_resource type="Texture2D" uid="uid://jdqcdl1khom2" path="res://assets/placeholders/hub/cash.png" id="12_i2nm8"]
+[ext_resource type="Texture2D" uid="uid://bcw2p7tcynjlq" path="res://assets/placeholders/hub/decisions.png" id="13_m2npn"]
+[ext_resource type="Texture2D" uid="uid://c1c3xrdmfwqpy" path="res://assets/placeholders/hub/menu_icon.png" id="15_4sa0x"]
+[ext_resource type="Texture2D" uid="uid://dqpew46di0mlc" path="res://assets/placeholders/hub/save_icon.png" id="16_geauy"]
+[ext_resource type="Texture2D" uid="uid://reaxtmme8qfy" path="res://assets/placeholders/hub/news_icon.png" id="17_qx2hh"]
+[ext_resource type="Texture2D" uid="uid://ciw0vtafrriaa" path="res://assets/placeholders/hub/play_icon.png" id="18_l5g12"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi4pt"]
 content_margin_left = 20.0
@@ -62,6 +73,16 @@ font = ExtResource("2_bi4pt")
 font_size = 20
 font_color = Color(1, 1, 0, 1)
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx2hh"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.5254902, 0.6666667, 0.10980392, 1)
+border_width_left = 1
+border_width_top = 1
+border_color = Color(0.6392157, 0.7921569, 0.05490196, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vl208"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1o6"]
@@ -106,101 +127,158 @@ border_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
 bg_color = Color(3.8023293e-06, 0.44592398, 0.57976294, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
 shadow_size = 1
 shadow_offset = Vector2(1, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svagy"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_m2npn"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.15294118, 0.105882354, 0.9647059, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_geauy"]
+content_margin_left = 20.0
+content_margin_top = 20.0
+content_margin_right = 20.0
+content_margin_bottom = 20.0
+bg_color = Color(0, 0.4745098, 0.5647059, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_bottom = 1
 
 [sub_resource type="LabelSettings" id="LabelSettings_4wfe4"]
 font = ExtResource("3_bi4pt")
 font_size = 24
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i2nm8"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 20.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5g12"]
+content_margin_right = 20.0
+content_margin_bottom = 0.0
+bg_color = Color(0.8104176, 0.81041765, 0.8104174, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.37036446, 0.3703645, 0.37036446, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
 [node name="MainHub" type="CanvasLayer" unique_id=1408878207]
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=2143380276]
+[node name="Header" type="VBoxContainer" parent="." unique_id=2143380276]
 anchors_preset = 10
 anchor_right = 1.0
 grow_horizontal = 2
+theme_override_constants/separation = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer" unique_id=1616585238]
+[node name="MarginContainer" type="MarginContainer" parent="Header" unique_id=1616585238]
 custom_minimum_size = Vector2(0, 15)
 layout_mode = 2
 
-[node name="HeaderContainer" type="PanelContainer" parent="VBoxContainer" unique_id=79302732]
+[node name="HeaderContainer" type="PanelContainer" parent="Header" unique_id=79302732]
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_styles/panel = SubResource("StyleBoxFlat_bi4pt")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HeaderContainer" unique_id=739253957]
+[node name="HBoxContainer" type="HBoxContainer" parent="Header/HeaderContainer" unique_id=739253957]
 layout_mode = 2
 theme_override_constants/separation = 15
 alignment = 1
 
-[node name="GameModeContainer" type="VBoxContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=702222736]
+[node name="GameModeContainer" type="VBoxContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=702222736]
 custom_minimum_size = Vector2(160, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = -6
 
-[node name="Label" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=203337197]
+[node name="Label" type="Label" parent="Header/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=203337197]
 layout_mode = 2
 text = "Liga"
 
-[node name="Label2" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=235281118]
+[node name="Label2" type="Label" parent="Header/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=235281118]
 layout_mode = 2
 text = "   ManagerPro"
 
-[node name="HomeContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=505786618]
+[node name="HomeContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=505786618]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_4wfe4")
 
-[node name="Home" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/HomeContainer" unique_id=91422965]
+[node name="Home" type="Label" parent="Header/HeaderContainer/HBoxContainer/HomeContainer" unique_id=91422965]
 layout_mode = 2
 text = "Villarreal"
 horizontal_alignment = 1
 
-[node name="AwayContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=1361414533]
+[node name="AwayContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=1361414533]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_4wfe4")
 
-[node name="Away" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/AwayContainer" unique_id=1974789085]
+[node name="Away" type="Label" parent="Header/HeaderContainer/HBoxContainer/AwayContainer" unique_id=1974789085]
 layout_mode = 2
 text = "Logroñés"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer" unique_id=1467047835]
+[node name="HBoxContainer" type="HBoxContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=1467047835]
 layout_mode = 2
 size_flags_horizontal = 3
 theme_override_constants/separation = 4
 alignment = 1
 
-[node name="MatchDayContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=527084497]
+[node name="MatchDayContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=527084497]
 custom_minimum_size = Vector2(0, 22)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_2cb7x")
 
-[node name="MatchDayLabel" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayContainer" unique_id=2026194043]
+[node name="MatchDayLabel" type="Label" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayContainer" unique_id=2026194043]
 layout_mode = 2
 text = "JORNADA"
 label_settings = SubResource("LabelSettings_2cb7x")
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="MatchDayNunmberContainer" type="PanelContainer" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=1355196878]
+[node name="MatchDayNunmberContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=1355196878]
 custom_minimum_size = Vector2(30, 22)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_hshcj")
 
-[node name="Label3" type="Label" parent="VBoxContainer/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayNunmberContainer" unique_id=1723953658]
+[node name="Label3" type="Label" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayNunmberContainer" unique_id=1723953658]
 layout_mode = 2
 text = "1"
 label_settings = SubResource("LabelSettings_hshcj")
+horizontal_alignment = 1
+
+[node name="CompetitionContainer" type="PanelContainer" parent="Header" unique_id=1781994833]
+layout_mode = 2
+size_flags_horizontal = 4
+theme = ExtResource("1_hshcj")
+theme_override_styles/panel = SubResource("StyleBoxFlat_qx2hh")
+
+[node name="Label" type="Label" parent="Header/CompetitionContainer" unique_id=1979994215]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "2ª División"
 horizontal_alignment = 1
 
 [node name="Body" type="VBoxContainer" parent="." unique_id=548524236]
@@ -216,12 +294,14 @@ offset_bottom = 23.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("1_hshcj")
+theme_override_constants/separation = 40
 alignment = 1
 
 [node name="Row1" type="HBoxContainer" parent="Body" unique_id=911426353]
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
+theme_override_constants/separation = 100
 alignment = 1
 
 [node name="StatsContainer" type="PanelContainer" parent="Body/Row1" unique_id=246526934]
@@ -297,6 +377,7 @@ layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
 
 [node name="TextureRect" type="TextureRect" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Club" unique_id=1866204070]
+texture_filter = 1
 layout_mode = 2
 texture = ExtResource("3_p1xbd")
 stretch_mode = 5
@@ -307,6 +388,7 @@ theme_override_constants/separation = 27
 alignment = 1
 
 [node name="Tables" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/Stats" unique_id=887151154]
+texture_filter = 1
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -321,6 +403,7 @@ vertical_icon_alignment = 0
 expand_icon = true
 
 [node name="Results" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/Stats" unique_id=662577706]
+texture_filter = 1
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
 size_flags_horizontal = 4
@@ -336,78 +419,194 @@ expand_icon = true
 
 [node name="CoachContainer" type="PanelContainer" parent="Body/Row1" unique_id=1597057035]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_svagy")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Body/Row1/CoachContainer" unique_id=304398793]
 layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
 
-[node name="Label" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer" unique_id=1800683909]
+[node name="ManagerTitle" type="PanelContainer" parent="Body/Row1/CoachContainer/VBoxContainer" unique_id=2081847924]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2npn")
+
+[node name="Label" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerTitle" unique_id=1800683909]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bi4pt")
 text = "ENTRENADOR"
+horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/CoachContainer/VBoxContainer" unique_id=332333799]
+[node name="ManagerButtons" type="PanelContainer" parent="Body/Row1/CoachContainer/VBoxContainer" unique_id=1414441948]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_geauy")
 
-[node name="LineUp" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/HBoxContainer" unique_id=1816635846]
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons" unique_id=332333799]
 layout_mode = 2
-text = "ALINEACIÓN"
+theme_override_constants/separation = 20
 
-[node name="Tactics" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/HBoxContainer" unique_id=2096002228]
+[node name="LineUp" type="Button" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=777148079]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
-text = "TÁCTICAS"
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "ALINEACION"
+icon = ExtResource("7_vl208")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
-[node name="Rival" type="Label" parent="Body/Row1/CoachContainer/VBoxContainer/HBoxContainer" unique_id=1366133446]
+[node name="Tactics" type="Button" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=988865502]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "TACTICAS"
+icon = ExtResource("8_7y1o6")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="Rival" type="Button" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=714516617]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "VER RIVAL"
+icon = ExtResource("9_aqdmb")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="Row2" type="HBoxContainer" parent="Body" unique_id=669472376]
 layout_mode = 2
+theme_override_constants/separation = 200
 alignment = 1
 
-[node name="MarketContainer" type="PanelContainer" parent="Body/Row2" unique_id=354124511]
+[node name="TransfersContainer" type="PanelContainer" parent="Body/Row2" unique_id=946191446]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_svagy")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row2/MarketContainer" unique_id=955380370]
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row2/TransfersContainer" unique_id=1736262362]
 layout_mode = 2
+theme_override_constants/separation = 0
 alignment = 1
 
-[node name="Label" type="Label" parent="Body/Row2/MarketContainer/VBoxContainer" unique_id=687358307]
+[node name="TransfersTitle" type="PanelContainer" parent="Body/Row2/TransfersContainer/VBoxContainer" unique_id=634873722]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2npn")
+
+[node name="Label" type="Label" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersTitle" unique_id=1299466097]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bi4pt")
 text = "FICHAJES"
+horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row2/MarketContainer/VBoxContainer" unique_id=2036993014]
+[node name="TransfersButtons" type="PanelContainer" parent="Body/Row2/TransfersContainer/VBoxContainer" unique_id=516670560]
 layout_mode = 2
-alignment = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_geauy")
 
-[node name="Label" type="Label" parent="Body/Row2/MarketContainer/VBoxContainer/HBoxContainer" unique_id=1934551218]
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersButtons" unique_id=1592110695]
 layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Buy" type="Button" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersButtons/HBoxContainer" unique_id=433293751]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "COMPRAR"
+icon = ExtResource("10_tsv7u")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
-[node name="Label2" type="Label" parent="Body/Row2/MarketContainer/VBoxContainer/HBoxContainer" unique_id=1031050896]
+[node name="Sell" type="Button" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersButtons/HBoxContainer" unique_id=822710830]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "VENDER"
+icon = ExtResource("11_4sa0x")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
-[node name="EconomyContainer" type="PanelContainer" parent="Body/Row2" unique_id=1505412176]
+[node name="FinancesContainer" type="PanelContainer" parent="Body/Row2" unique_id=2095223461]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_svagy")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row2/EconomyContainer" unique_id=1828560881]
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row2/FinancesContainer" unique_id=1979609513]
 layout_mode = 2
+theme_override_constants/separation = 0
 alignment = 1
 
-[node name="Label" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer" unique_id=1407885645]
+[node name="FinancesTitle" type="PanelContainer" parent="Body/Row2/FinancesContainer/VBoxContainer" unique_id=2106921191]
 layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_m2npn")
+
+[node name="Label" type="Label" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesTitle" unique_id=1276991599]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("2_bi4pt")
 text = "FINANZAS"
+horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row2/EconomyContainer/VBoxContainer" unique_id=723370844]
+[node name="FinancesButtons" type="PanelContainer" parent="Body/Row2/FinancesContainer/VBoxContainer" unique_id=1451859372]
 layout_mode = 2
-alignment = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_geauy")
 
-[node name="Label" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer/HBoxContainer" unique_id=907716913]
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesButtons" unique_id=1105238220]
 layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="LineUp" type="Button" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesButtons/HBoxContainer" unique_id=1105134722]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "CAJA"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
-[node name="Label2" type="Label" parent="Body/Row2/EconomyContainer/VBoxContainer/HBoxContainer" unique_id=329131484]
+[node name="Tactics" type="Button" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesButtons/HBoxContainer" unique_id=1748913756]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "DECISIONES"
+icon = ExtResource("13_m2npn")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="Label" type="Label" parent="." unique_id=2085068760]
 offset_left = 368.0
@@ -419,3 +618,56 @@ text = "MANAGER WORLD LEAGUES
 label_settings = SubResource("LabelSettings_4wfe4")
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="Footer" type="VBoxContainer" parent="." unique_id=419480115]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Footer" unique_id=335887392]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxEmpty_i2nm8")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Footer/PanelContainer" unique_id=1639335407]
+layout_mode = 2
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="MenuButton" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=1679050769]
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Menú Principal"
+icon = ExtResource("15_4sa0x")
+
+[node name="SaveButton" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=452840994]
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Grabar Liga"
+icon = ExtResource("16_geauy")
+
+[node name="NewsButton" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=391408693]
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Noticias"
+icon = ExtResource("17_qx2hh")
+
+[node name="PlayButton" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=695590494]
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Jugar"
+icon = ExtResource("18_l5g12")
