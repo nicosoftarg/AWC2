@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://c4jvq07dmegyb"]
+
+[ext_resource type="FontFile" uid="uid://h72hgatuotek" path="res://assets/fonts/Outfit-Bold.ttf" id="1_gd5c8"]
+
+[resource]
+default_font = ExtResource("1_gd5c8")

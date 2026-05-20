@@ -1,11 +1,12 @@
 [gd_scene format=3 uid="uid://ctioly4067uek"]
 
-[ext_resource type="FontFile" uid="uid://h72hgatuotek" path="res://assets/fonts/Outfit-Bold.ttf" id="1_eknkn"]
+[ext_resource type="Theme" uid="uid://c4jvq07dmegyb" path="res://resources/hub_theme.tres" id="1_hshcj"]
 [ext_resource type="FontFile" uid="uid://7uhqwmgfm71w" path="res://assets/fonts/946-latin-wide-4.ttf" id="2_bi4pt"]
 [ext_resource type="FontFile" uid="uid://b0dp1rkskx15o" path="res://assets/fonts/Futura Extra Black Condensed Italic.otf" id="3_bi4pt"]
-
-[sub_resource type="Theme" id="Theme_4wfe4"]
-default_font = ExtResource("1_eknkn")
+[ext_resource type="Texture2D" uid="uid://c35ekuw1ayfu6" path="res://assets/placeholders/logos/logo_villarreal.png" id="3_p1xbd"]
+[ext_resource type="FontFile" uid="uid://dayae0mllaayf" path="res://assets/fonts/5 Text Uppercase.ttf" id="4_asv7p"]
+[ext_resource type="Texture2D" uid="uid://duwr7qrntog8a" path="res://assets/placeholders/hub/CLASIFICACION.PNG" id="5_ruua2"]
+[ext_resource type="Texture2D" uid="uid://dakc0nv73gv3x" path="res://assets/placeholders/hub/results.png" id="6_p1xbd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bi4pt"]
 content_margin_left = 20.0
@@ -61,6 +62,53 @@ font = ExtResource("2_bi4pt")
 font_size = 20
 font_color = Color(1, 1, 0, 1)
 
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_vl208"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1o6"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqdmb"]
+bg_color = Color(1, 0, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_svagy"]
+content_margin_left = 5.0
+bg_color = Color(0.7666196, 0.76661956, 0.76661944, 1)
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsv7u"]
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0.38170326, 0.38170326, 0.3817031, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4sa0x"]
+bg_color = Color(0.9297146, 0.9297147, 0.9297146, 1)
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
+bg_color = Color(3.8023293e-06, 0.44592398, 0.57976294, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
+
 [sub_resource type="LabelSettings" id="LabelSettings_4wfe4"]
 font = ExtResource("3_bi4pt")
 font_size = 24
@@ -78,7 +126,7 @@ layout_mode = 2
 
 [node name="HeaderContainer" type="PanelContainer" parent="VBoxContainer" unique_id=79302732]
 layout_mode = 2
-theme = SubResource("Theme_4wfe4")
+theme = ExtResource("1_hshcj")
 theme_override_styles/panel = SubResource("StyleBoxFlat_bi4pt")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/HeaderContainer" unique_id=739253957]
@@ -167,6 +215,7 @@ offset_right = 244.5
 offset_bottom = 23.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("1_hshcj")
 alignment = 1
 
 [node name="Row1" type="HBoxContainer" parent="Body" unique_id=911426353]
@@ -178,26 +227,112 @@ alignment = 1
 [node name="StatsContainer" type="PanelContainer" parent="Body/Row1" unique_id=246526934]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_vl208")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Body/Row1/StatsContainer" unique_id=692495419]
 layout_mode = 2
+theme_override_constants/separation = 13
 alignment = 1
 
-[node name="Label" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=2051178744]
+[node name="ManagerContainer" type="HBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=910989907]
 layout_mode = 2
-text = "Turno de"
+theme_override_constants/separation = 0
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=573389799]
+[node name="Manager" type="VBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer" unique_id=1489951892]
+custom_minimum_size = Vector2(140, 0)
 layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="PanelContainer" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager" unique_id=1867690883]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7y1o6")
+
+[node name="Label" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager/PanelContainer" unique_id=2051178744]
+layout_mode = 2
+text = "Turno de:"
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager" unique_id=1100641222]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ManagerNumber" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager/HBoxContainer" unique_id=1580350141]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+theme_override_styles/panel = SubResource("StyleBoxFlat_aqdmb")
+
+[node name="Label" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager/HBoxContainer/ManagerNumber" unique_id=1149117234]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "1"
+horizontal_alignment = 1
+
+[node name="ManagerName" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager/HBoxContainer" unique_id=788895761]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_svagy")
+
+[node name="Label2" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager/HBoxContainer/ManagerName" unique_id=389848452]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Nico"
+
+[node name="ClubName" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager" unique_id=1730883526]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tsv7u")
+
+[node name="Label" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Manager/ClubName" unique_id=717597989]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_font_sizes/font_size = 11
+text = "Villarreal"
+horizontal_alignment = 1
+
+[node name="Club" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer" unique_id=1702047549]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
+
+[node name="TextureRect" type="TextureRect" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerContainer/Club" unique_id=1866204070]
+layout_mode = 2
+texture = ExtResource("3_p1xbd")
+stretch_mode = 5
+
+[node name="Stats" type="HBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=573389799]
+layout_mode = 2
+theme_override_constants/separation = 27
 alignment = 1
 
-[node name="Tables" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/HBoxContainer" unique_id=1586577865]
+[node name="Tables" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/Stats" unique_id=887151154]
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
-text = "CLASIFICACIÓN"
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "CLASIFICACION"
+icon = ExtResource("5_ruua2")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
-[node name="Results" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/HBoxContainer" unique_id=155933137]
+[node name="Results" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/Stats" unique_id=662577706]
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "RESULTADOS"
+icon = ExtResource("6_p1xbd")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
 
 [node name="CoachContainer" type="PanelContainer" parent="Body/Row1" unique_id=1597057035]
 layout_mode = 2
@@ -279,8 +414,7 @@ offset_left = 368.0
 offset_top = -68.0
 offset_right = 592.0
 offset_bottom = 28.0
-text = "ARCADE WORLD CUPS 2:
-EL ENTRENADOR
+text = "MANAGER WORLD LEAGUES
 "
 label_settings = SubResource("LabelSettings_4wfe4")
 horizontal_alignment = 1
