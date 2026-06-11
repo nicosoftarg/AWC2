@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://ctioly4067uek"]
 
 [ext_resource type="Theme" uid="uid://c4jvq07dmegyb" path="res://resources/hub_theme.tres" id="1_hshcj"]
+[ext_resource type="StyleBox" uid="uid://dxnnf77dsbjcp" path="res://resources/bar_theme.tres" id="1_l5g12"]
 [ext_resource type="FontFile" uid="uid://h72hgatuotek" path="res://assets/fonts/Outfit-Bold.ttf" id="1_qx2hh"]
 [ext_resource type="FontFile" uid="uid://7uhqwmgfm71w" path="res://assets/fonts/946-latin-wide-4.ttf" id="2_bi4pt"]
 [ext_resource type="FontFile" uid="uid://b0dp1rkskx15o" path="res://assets/fonts/Futura Extra Black Condensed Italic.otf" id="3_bi4pt"]
@@ -20,20 +21,18 @@
 [ext_resource type="Texture2D" uid="uid://reaxtmme8qfy" path="res://assets/placeholders/hub/news_icon.png" id="17_qx2hh"]
 [ext_resource type="Texture2D" uid="uid://ciw0vtafrriaa" path="res://assets/placeholders/hub/play_icon.png" id="18_l5g12"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rr56"]
-content_margin_left = 10.0
-content_margin_top = 40.0
-content_margin_right = 10.0
-content_margin_bottom = 40.0
-bg_color = Color(0.07698322, 0.27032644, 0.45041996, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
+bg_color = Color(3.8023293e-06, 0.44592398, 0.57976294, 1)
 border_width_left = 1
 border_width_top = 1
-border_color = Color(0.33978066, 0.62338656, 0.9106141, 1)
-shadow_color = Color(0, 0, 0, 1)
-shadow_size = 2
+border_width_right = 1
+border_width_bottom = 1
+shadow_size = 1
 shadow_offset = Vector2(1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1o6"]
+content_margin_left = 10.0
+content_margin_right = 10.0
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 1
 border_width_top = 1
@@ -172,20 +171,6 @@ border_width_left = 1
 border_width_right = 1
 border_width_bottom = 1
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
-bg_color = Color(3.8023293e-06, 0.44592398, 0.57976294, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-shadow_size = 1
-shadow_offset = Vector2(1, 1)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_i2nm8"]
-content_margin_left = 5.0
-content_margin_right = 5.0
-content_margin_bottom = 20.0
-
 [sub_resource type="LabelSettings" id="LabelSettings_4wfe4"]
 font = ExtResource("3_bi4pt")
 font_size = 24
@@ -195,25 +180,170 @@ font = ExtResource("1_qx2hh")
 
 [node name="MainHub" type="CanvasLayer" unique_id=1408878207]
 
-[node name="LeftBar" type="PanelContainer" parent="." unique_id=336317955]
-anchors_preset = 9
+[node name="Footer" type="VBoxContainer" parent="." unique_id=419480115]
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = 169.0
-grow_vertical = 2
-theme = ExtResource("1_hshcj")
-theme_override_styles/panel = SubResource("StyleBoxFlat_3rr56")
+offset_top = -75.0
+grow_horizontal = 2
+grow_vertical = 0
+size_flags_vertical = 4
 
-[node name="VBoxContainer" type="VBoxContainer" parent="LeftBar" unique_id=1000385268]
+[node name="PanelContainer" type="PanelContainer" parent="Footer" unique_id=335887392]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = ExtResource("1_l5g12")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Footer/PanelContainer" unique_id=1639335407]
 layout_mode = 2
 theme_override_constants/separation = 22
 alignment = 1
 
-[node name="ManagerContainer" type="HBoxContainer" parent="LeftBar/VBoxContainer" unique_id=910989907]
+[node name="LineUp" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=2116868850]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
-theme_override_constants/separation = 0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "SEGUNDO
+ENTRENADOR"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp2" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=663476027]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "FISIO"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp3" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=172338313]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "PSICOLOGO"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp4" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=70806498]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "DIRECTIVA"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp5" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=556311681]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "SECRETARIO
+TECNICO"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp6" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=1675164950]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "ENTRENADOR
+JUVENILES"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp7" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=921234370]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "OJEADOR"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LineUp8" type="Button" parent="Footer/PanelContainer/HBoxContainer" unique_id=1775253542]
+texture_filter = 1
+custom_minimum_size = Vector2(60, 45)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_fonts/font = ExtResource("4_asv7p")
+theme_override_font_sizes/font_size = 15
+theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
+text = "ENCARGADO
+DEL CAMPO"
+icon = ExtResource("12_i2nm8")
+icon_alignment = 1
+vertical_icon_alignment = 0
+expand_icon = true
+
+[node name="LeftBar" type="PanelContainer" parent="." unique_id=336317955]
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 127.0
+grow_vertical = 2
+theme = ExtResource("1_hshcj")
+theme_override_styles/panel = ExtResource("1_l5g12")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="LeftBar" unique_id=1000385268]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 22
+alignment = 1
+
+[node name="ManagerContainer" type="VBoxContainer" parent="LeftBar/VBoxContainer" unique_id=81792729]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
 
 [node name="Manager" type="VBoxContainer" parent="LeftBar/VBoxContainer/ManagerContainer" unique_id=1489951892]
-custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
 theme_override_constants/separation = 0
 
@@ -224,7 +354,6 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_7y1o6")
 [node name="Label" type="Label" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/PanelContainer" unique_id=2051178744]
 layout_mode = 2
 text = "Turno de:"
-horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="LeftBar/VBoxContainer/ManagerContainer/Manager" unique_id=1100641222]
 layout_mode = 2
@@ -268,6 +397,7 @@ horizontal_alignment = 1
 
 [node name="Club" type="PanelContainer" parent="LeftBar/VBoxContainer/ManagerContainer" unique_id=1702047549]
 layout_mode = 2
+size_flags_horizontal = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
 
 [node name="TextureRect" type="TextureRect" parent="LeftBar/VBoxContainer/ManagerContainer/Club" unique_id=1866204070]
@@ -314,6 +444,64 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Jugar"
+icon = ExtResource("18_l5g12")
+
+[node name="RightBar" type="PanelContainer" parent="." unique_id=803603913]
+anchors_preset = 11
+anchor_left = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -137.0
+grow_horizontal = 0
+grow_vertical = 2
+theme = ExtResource("1_hshcj")
+theme_override_styles/panel = ExtResource("1_l5g12")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RightBar" unique_id=138089351]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 22
+alignment = 1
+
+[node name="MenuButton" type="Button" parent="RightBar/VBoxContainer" unique_id=335112069]
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Tipo de
+partido
+"
+icon = ExtResource("15_4sa0x")
+
+[node name="SaveButton" type="Button" parent="RightBar/VBoxContainer" unique_id=424012438]
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Opciones"
+icon = ExtResource("16_geauy")
+
+[node name="NewsButton" type="Button" parent="RightBar/VBoxContainer" unique_id=203052753]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Ayuda"
+icon = ExtResource("17_qx2hh")
+
+[node name="PlayButton" type="Button" parent="RightBar/VBoxContainer" unique_id=2032832521]
+custom_minimum_size = Vector2(0, 35)
+layout_mode = 2
+theme = ExtResource("1_hshcj")
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 13
+theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
+text = "Salir a
+Windows"
 icon = ExtResource("18_l5g12")
 
 [node name="Header" type="VBoxContainer" parent="." unique_id=2143380276]
@@ -444,34 +632,34 @@ size_flags_vertical = 4
 theme_override_constants/separation = 8
 alignment = 1
 
-[node name="CoachContainer2" type="PanelContainer" parent="Body/Row1" unique_id=1644136907]
+[node name="StatsContainer" type="PanelContainer" parent="Body/Row1" unique_id=1644136907]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxEmpty_svagy")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row1/CoachContainer2" unique_id=1910762409]
+[node name="VBoxContainer" type="VBoxContainer" parent="Body/Row1/StatsContainer" unique_id=1910762409]
 layout_mode = 2
 theme_override_constants/separation = 0
 alignment = 1
 
-[node name="ManagerTitle" type="PanelContainer" parent="Body/Row1/CoachContainer2/VBoxContainer" unique_id=37929424]
+[node name="ManagerTitle" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=37929424]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_m2npn")
 
-[node name="Label" type="Label" parent="Body/Row1/CoachContainer2/VBoxContainer/ManagerTitle" unique_id=1029819150]
+[node name="Label" type="Label" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerTitle" unique_id=1029819150]
 layout_mode = 2
 theme_override_fonts/font = ExtResource("2_bi4pt")
 text = "SEGUIMIENTO"
 horizontal_alignment = 1
 
-[node name="ManagerButtons" type="PanelContainer" parent="Body/Row1/CoachContainer2/VBoxContainer" unique_id=1122579600]
+[node name="ManagerButtons" type="PanelContainer" parent="Body/Row1/StatsContainer/VBoxContainer" unique_id=1122579600]
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_geauy")
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/CoachContainer2/VBoxContainer/ManagerButtons" unique_id=7052932]
+[node name="HBoxContainer" type="HBoxContainer" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons" unique_id=7052932]
 layout_mode = 2
 theme_override_constants/separation = 20
 
-[node name="Tables" type="Button" parent="Body/Row1/CoachContainer2/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=887151154]
+[node name="Tables" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=887151154]
 texture_filter = 1
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
@@ -486,7 +674,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Results" type="Button" parent="Body/Row1/CoachContainer2/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=662577706]
+[node name="Results" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=662577706]
 texture_filter = 1
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
@@ -501,7 +689,7 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Calendar" type="Button" parent="Body/Row1/CoachContainer2/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=1648251542]
+[node name="Calendar" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=1648251542]
 texture_filter = 1
 custom_minimum_size = Vector2(60, 45)
 layout_mode = 2
@@ -737,36 +925,20 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="Footer" type="VBoxContainer" parent="." unique_id=419480115]
-anchors_preset = 12
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="Footer" unique_id=335887392]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxEmpty_i2nm8")
-
-[node name="HBoxContainer" type="HBoxContainer" parent="Footer/PanelContainer" unique_id=1639335407]
-layout_mode = 2
-theme_override_constants/separation = 40
-alignment = 1
-
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1832724145]
-custom_minimum_size = Vector2(169, 50)
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_top = -40.0
-offset_right = 40.0
+offset_top = -72.0
+offset_right = 137.0
 grow_vertical = 0
+size_flags_horizontal = 4
 alignment = 1
 
 [node name="Label" type="Label" parent="VBoxContainer" unique_id=2085068760]
 layout_mode = 2
-text = "GOAL DANGER"
+text = "GOAL 
+DANGER"
 label_settings = SubResource("LabelSettings_4wfe4")
 horizontal_alignment = 1
 vertical_alignment = 1
