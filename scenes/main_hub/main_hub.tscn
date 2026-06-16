@@ -30,51 +30,10 @@ border_width_bottom = 1
 shadow_size = 1
 shadow_offset = Vector2(1, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1o6"]
-content_margin_left = 10.0
-content_margin_right = 10.0
-bg_color = Color(0, 0, 0, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqdmb"]
-bg_color = Color(1, 0, 0, 1)
-border_width_left = 1
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_svagy"]
-content_margin_left = 5.0
-bg_color = Color(0.7666196, 0.76661956, 0.76661944, 1)
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsv7u"]
-content_margin_top = 3.0
-content_margin_bottom = 3.0
-bg_color = Color(0.38170326, 0.38170326, 0.3817031, 1)
-border_width_left = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4sa0x"]
-bg_color = Color(0.9297146, 0.9297147, 0.9297146, 1)
-border_width_top = 1
-border_width_right = 1
-border_width_bottom = 1
-border_color = Color(0, 0, 0, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5g12"]
+content_margin_top = 2.0
 content_margin_right = 20.0
-content_margin_bottom = 0.0
+content_margin_bottom = 2.0
 bg_color = Color(0.8104176, 0.81041765, 0.8104174, 1)
 border_width_left = 1
 border_width_top = 1
@@ -93,6 +52,16 @@ border_color = Color(2.117753e-06, 0.77075076, 0.9114079, 1)
 shadow_color = Color(0, 0, 0, 0.76862746)
 shadow_size = 2
 shadow_offset = Vector2(0, 2)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx2hh"]
+content_margin_left = 5.0
+content_margin_right = 5.0
+bg_color = Color(0.14509805, 0.41568628, 0.67058825, 1)
+border_width_left = 1
+border_width_top = 1
+border_color = Color(0.37177894, 0.6443798, 0.92317635, 1)
+shadow_size = 1
+shadow_offset = Vector2(1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4wfe4"]
 bg_color = Color(0.14509805, 0.41568628, 0.67058825, 1)
@@ -138,15 +107,92 @@ font = ExtResource("2_bi4pt")
 font_size = 20
 font_color = Color(1, 1, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qx2hh"]
-content_margin_left = 5.0
-content_margin_right = 5.0
-bg_color = Color(0.14509805, 0.41568628, 0.67058825, 1)
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1oxo"]
+bg_color = Color(0.2123048, 0.21230489, 0.21230471, 1)
+draw_center = false
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cst53"]
+content_margin_top = 2.0
+content_margin_bottom = 1.0
+bg_color = Color(0.14901961, 0.14901961, 0.36862746, 1)
+corner_radius_top_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_7uddd"]
+font = ExtResource("2_bi4pt")
+font_size = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqv46"]
+content_margin_left = 1.0
+content_margin_top = 2.0
+content_margin_right = 1.0
+content_margin_bottom = 2.0
+bg_color = Color(0.19215687, 0.21176471, 0.6392157, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_du425"]
+font = ExtResource("2_bi4pt")
+font_size = 6
+font_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msrk7"]
+content_margin_top = 1.0
+content_margin_bottom = 3.0
+bg_color = Color(0.79199904, 0.79199916, 0.7919989, 1)
+corner_radius_bottom_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_1vqbu"]
+font = ExtResource("2_bi4pt")
+font_size = 6
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oqv46"]
+font = ExtResource("2_bi4pt")
+font_size = 6
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1o6"]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color(0, 0, 0.34901962, 1)
 border_width_left = 1
 border_width_top = 1
-border_color = Color(0.37177894, 0.6443798, 0.92317635, 1)
-shadow_size = 1
-shadow_offset = Vector2(1, 1)
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_aqdmb"]
+bg_color = Color(0, 0, 0.7882353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_svagy"]
+content_margin_left = 5.0
+bg_color = Color(0.8159075, 0.85493726, 0.9999985, 1)
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsv7u"]
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0.09019608, 0.1764706, 0.44705883, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4sa0x"]
+bg_color = Color(0.9297146, 0.9297147, 0.9297146, 1)
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svagy"]
 
@@ -178,9 +224,36 @@ font_size = 24
 [sub_resource type="LabelSettings" id="LabelSettings_l5g12"]
 font = ExtResource("1_qx2hh")
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rr56"]
+draw_center = false
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7uddd"]
+bg_color = Color(0.23384297, 0.013261687, 0.013321136, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_msrk7"]
+font = ExtResource("3_bi4pt")
+font_size = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_1vqbu"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.851769, 0.851769, 0.8517688, 1)
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_06xsx"]
+font = ExtResource("1_qx2hh")
+font_size = 13
+font_color = Color(0, 0, 0, 1)
+
 [node name="MainHub" type="CanvasLayer" unique_id=1408878207]
 
 [node name="Footer" type="VBoxContainer" parent="." unique_id=419480115]
+visible = false
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -338,75 +411,8 @@ size_flags_horizontal = 4
 theme_override_constants/separation = 22
 alignment = 1
 
-[node name="ManagerContainer" type="VBoxContainer" parent="LeftBar/VBoxContainer" unique_id=81792729]
-layout_mode = 2
-theme_override_constants/separation = 15
-alignment = 1
-
-[node name="Manager" type="VBoxContainer" parent="LeftBar/VBoxContainer/ManagerContainer" unique_id=1489951892]
-layout_mode = 2
-theme_override_constants/separation = 0
-
-[node name="PanelContainer" type="PanelContainer" parent="LeftBar/VBoxContainer/ManagerContainer/Manager" unique_id=1867690883]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_7y1o6")
-
-[node name="Label" type="Label" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/PanelContainer" unique_id=2051178744]
-layout_mode = 2
-text = "Turno de:"
-
-[node name="HBoxContainer" type="HBoxContainer" parent="LeftBar/VBoxContainer/ManagerContainer/Manager" unique_id=1100641222]
-layout_mode = 2
-theme_override_constants/separation = 0
-
-[node name="ManagerNumber" type="PanelContainer" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/HBoxContainer" unique_id=1580350141]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.2
-theme_override_styles/panel = SubResource("StyleBoxFlat_aqdmb")
-
-[node name="Label" type="Label" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/HBoxContainer/ManagerNumber" unique_id=1149117234]
-layout_mode = 2
-theme_override_font_sizes/font_size = 10
-text = "1"
-horizontal_alignment = 1
-
-[node name="ManagerName" type="PanelContainer" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/HBoxContainer" unique_id=788895761]
-custom_minimum_size = Vector2(0, 22)
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_svagy")
-
-[node name="Label2" type="Label" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/HBoxContainer/ManagerName" unique_id=389848452]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 12
-text = "Nico"
-
-[node name="ClubName" type="PanelContainer" parent="LeftBar/VBoxContainer/ManagerContainer/Manager" unique_id=1730883526]
-custom_minimum_size = Vector2(0, 22)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_tsv7u")
-
-[node name="Label" type="Label" parent="LeftBar/VBoxContainer/ManagerContainer/Manager/ClubName" unique_id=717597989]
-layout_mode = 2
-theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
-theme_override_font_sizes/font_size = 11
-text = "Villarreal"
-horizontal_alignment = 1
-
-[node name="Club" type="PanelContainer" parent="LeftBar/VBoxContainer/ManagerContainer" unique_id=1702047549]
-layout_mode = 2
-size_flags_horizontal = 4
-theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
-
-[node name="TextureRect" type="TextureRect" parent="LeftBar/VBoxContainer/ManagerContainer/Club" unique_id=1866204070]
-texture_filter = 1
-layout_mode = 2
-texture = ExtResource("3_p1xbd")
-stretch_mode = 5
-
 [node name="MenuButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=1679050769]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -416,34 +422,35 @@ text = "Menú
 Principal"
 icon = ExtResource("15_4sa0x")
 
-[node name="SaveButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=452840994]
+[node name="OptionsButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=424012438]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
-text = "Grabar 
-Liga"
+text = "Opciones"
 icon = ExtResource("16_geauy")
 
-[node name="NewsButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=391408693]
-custom_minimum_size = Vector2(0, 35)
+[node name="HelpButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=203052753]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
-text = "Noticias"
+text = "Ayuda"
 icon = ExtResource("17_qx2hh")
 
-[node name="PlayButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=695590494]
-custom_minimum_size = Vector2(0, 35)
+[node name="QuitButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=2032832521]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
-text = "Jugar"
+text = "Salir a
+Windows"
 icon = ExtResource("18_l5g12")
 
 [node name="RightBar" type="PanelContainer" parent="." unique_id=803603913]
@@ -463,7 +470,8 @@ size_flags_horizontal = 4
 theme_override_constants/separation = 22
 alignment = 1
 
-[node name="MenuButton" type="Button" parent="RightBar/VBoxContainer" unique_id=335112069]
+[node name="GameTypeButton" type="Button" parent="RightBar/VBoxContainer" unique_id=335112069]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
@@ -474,34 +482,35 @@ partido
 "
 icon = ExtResource("15_4sa0x")
 
-[node name="SaveButton" type="Button" parent="RightBar/VBoxContainer" unique_id=424012438]
+[node name="SaveButton" type="Button" parent="RightBar/VBoxContainer" unique_id=452840994]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
-text = "Opciones"
+text = "Grabar 
+Liga"
 icon = ExtResource("16_geauy")
 
-[node name="NewsButton" type="Button" parent="RightBar/VBoxContainer" unique_id=203052753]
-custom_minimum_size = Vector2(0, 35)
+[node name="NewsButton" type="Button" parent="RightBar/VBoxContainer" unique_id=391408693]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
-text = "Ayuda"
+text = "Noticias"
 icon = ExtResource("17_qx2hh")
 
-[node name="PlayButton" type="Button" parent="RightBar/VBoxContainer" unique_id=2032832521]
-custom_minimum_size = Vector2(0, 35)
+[node name="PlayButton" type="Button" parent="RightBar/VBoxContainer" unique_id=695590494]
+custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
-text = "Salir a
-Windows"
+text = "Jugar"
 icon = ExtResource("18_l5g12")
 
 [node name="Header" type="VBoxContainer" parent="." unique_id=2143380276]
@@ -511,7 +520,7 @@ grow_horizontal = 2
 theme_override_constants/separation = 0
 
 [node name="MarginContainer" type="MarginContainer" parent="Header" unique_id=1616585238]
-custom_minimum_size = Vector2(0, 15)
+custom_minimum_size = Vector2(0, 25)
 layout_mode = 2
 
 [node name="ColorRect" type="ColorRect" parent="Header/MarginContainer" unique_id=543998799]
@@ -519,95 +528,728 @@ layout_mode = 2
 color = Color(0.63529414, 0.63529414, 0.63529414, 1)
 
 [node name="HeaderContainer" type="PanelContainer" parent="Header" unique_id=79302732]
+custom_minimum_size = Vector2(0, 40)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
 theme_override_styles/panel = SubResource("StyleBoxFlat_bi4pt")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="Header/HeaderContainer" unique_id=739253957]
 layout_mode = 2
-theme_override_constants/separation = 15
 alignment = 1
 
-[node name="GameModeContainer" type="VBoxContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=702222736]
-custom_minimum_size = Vector2(160, 0)
+[node name="HeaderLeft" type="MarginContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=1410481641]
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_constants/separation = -6
 
-[node name="Label" type="Label" parent="Header/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=203337197]
+[node name="HBoxContainer" type="HBoxContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderLeft" unique_id=304534824]
 layout_mode = 2
-text = "Liga"
+theme_override_constants/separation = 44
+alignment = 2
 
-[node name="Label2" type="Label" parent="Header/HeaderContainer/HBoxContainer/GameModeContainer" unique_id=235281118]
+[node name="CompetitionContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderLeft/HBoxContainer" unique_id=1781994833]
 layout_mode = 2
-text = "   ManagerPro"
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme = ExtResource("1_hshcj")
+theme_override_styles/panel = SubResource("StyleBoxFlat_qx2hh")
 
-[node name="HomeContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=505786618]
+[node name="Label" type="Label" parent="Header/HeaderContainer/HBoxContainer/HeaderLeft/HBoxContainer/CompetitionContainer" unique_id=1979994215]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "2ª División"
+horizontal_alignment = 1
+
+[node name="HomeContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderLeft/HBoxContainer" unique_id=505786618]
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
-size_flags_horizontal = 3
+size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_4wfe4")
 
-[node name="Home" type="Label" parent="Header/HeaderContainer/HBoxContainer/HomeContainer" unique_id=91422965]
+[node name="Home" type="Label" parent="Header/HeaderContainer/HBoxContainer/HeaderLeft/HBoxContainer/HomeContainer" unique_id=91422965]
 layout_mode = 2
 text = "Villarreal"
 horizontal_alignment = 1
 
-[node name="AwayContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=1361414533]
-custom_minimum_size = Vector2(150, 0)
+[node name="HeaderRight" type="MarginContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=1807499270]
 layout_mode = 2
 size_flags_horizontal = 3
+
+[node name="HBoxContainer" type="HBoxContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderRight" unique_id=1019456671]
+layout_mode = 2
+
+[node name="AwayContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer" unique_id=1361414533]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_4wfe4")
 
-[node name="Away" type="Label" parent="Header/HeaderContainer/HBoxContainer/AwayContainer" unique_id=1974789085]
+[node name="Away" type="Label" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer/AwayContainer" unique_id=1974789085]
 layout_mode = 2
 text = "Logroñés"
 horizontal_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Header/HeaderContainer/HBoxContainer" unique_id=1467047835]
+[node name="MatchDay" type="HBoxContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer" unique_id=1467047835]
 layout_mode = 2
-size_flags_horizontal = 3
 theme_override_constants/separation = 4
 alignment = 1
 
-[node name="MatchDayContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=527084497]
+[node name="MatchDayContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer/MatchDay" unique_id=527084497]
 custom_minimum_size = Vector2(0, 22)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_2cb7x")
 
-[node name="MatchDayLabel" type="Label" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayContainer" unique_id=2026194043]
+[node name="MatchDayLabel" type="Label" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer/MatchDay/MatchDayContainer" unique_id=2026194043]
 layout_mode = 2
 text = "JORNADA"
 label_settings = SubResource("LabelSettings_2cb7x")
 horizontal_alignment = 1
 vertical_alignment = 2
 
-[node name="MatchDayNunmberContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer" unique_id=1355196878]
+[node name="MatchDayNunmberContainer" type="PanelContainer" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer/MatchDay" unique_id=1355196878]
 custom_minimum_size = Vector2(30, 22)
 layout_mode = 2
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_hshcj")
 
-[node name="Label3" type="Label" parent="Header/HeaderContainer/HBoxContainer/HBoxContainer/MatchDayNunmberContainer" unique_id=1723953658]
+[node name="Label3" type="Label" parent="Header/HeaderContainer/HBoxContainer/HeaderRight/HBoxContainer/MatchDay/MatchDayNunmberContainer" unique_id=1723953658]
 layout_mode = 2
 text = "1"
 label_settings = SubResource("LabelSettings_hshcj")
 horizontal_alignment = 1
 
-[node name="CompetitionContainer" type="PanelContainer" parent="Header" unique_id=1781994833]
-layout_mode = 2
-size_flags_horizontal = 4
-theme = ExtResource("1_hshcj")
-theme_override_styles/panel = SubResource("StyleBoxFlat_qx2hh")
+[node name="TopRight" type="MarginContainer" parent="." unique_id=1556089768]
+custom_minimum_size = Vector2(160, 100)
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -160.0
+offset_bottom = 80.0
+grow_horizontal = 0
 
-[node name="Label" type="Label" parent="Header/CompetitionContainer" unique_id=1979994215]
+[node name="Calendar" type="PanelContainer" parent="TopRight" unique_id=1798636601]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_styles/panel = SubResource("StyleBoxFlat_p1oxo")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="TopRight/Calendar" unique_id=1116920650]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Month" type="PanelContainer" parent="TopRight/Calendar/VBoxContainer" unique_id=359583233]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_cst53")
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Month" unique_id=1578801888]
+layout_mode = 2
+text = "AGOSTO 2026"
+label_settings = SubResource("LabelSettings_7uddd")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="DayName" type="PanelContainer" parent="TopRight/Calendar/VBoxContainer" unique_id=2133978924]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_oqv46")
+
+[node name="VBoxContainer" type="HBoxContainer" parent="TopRight/Calendar/VBoxContainer/DayName" unique_id=44703741]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Grid1" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=958816074]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid1" unique_id=1794147684]
+layout_mode = 2
+text = "D"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Grid2" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=897861004]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid2" unique_id=776676771]
+layout_mode = 2
+text = "L"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Grid3" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=763492265]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid3" unique_id=1722306913]
+layout_mode = 2
+text = "M"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Grid4" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=1727873271]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid4" unique_id=94936037]
+layout_mode = 2
+text = "X"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Grid5" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=1737157471]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid5" unique_id=80562855]
+layout_mode = 2
+text = "J"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Grid6" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=1457379724]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid6" unique_id=622088513]
+layout_mode = 2
+text = "V"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Grid7" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer" unique_id=350439011]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/DayName/VBoxContainer/Grid7" unique_id=1479683452]
+layout_mode = 2
+text = "S"
+label_settings = SubResource("LabelSettings_du425")
+horizontal_alignment = 1
+
+[node name="Days" type="PanelContainer" parent="TopRight/Calendar/VBoxContainer" unique_id=579631134]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_msrk7")
+
+[node name="GridContainer" type="GridContainer" parent="TopRight/Calendar/VBoxContainer/Days" unique_id=1830248283]
+layout_mode = 2
+theme_override_constants/h_separation = 0
+theme_override_constants/v_separation = 2
+columns = 7
+
+[node name="Grid1" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=990236486]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid1" unique_id=2062315863]
+visible = false
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid2" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1576231763]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid2" unique_id=2018556273]
+visible = false
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid3" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1251180499]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid3" unique_id=439627443]
+visible = false
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid4" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1144987213]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid4" unique_id=1828966927]
+visible = false
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid5" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1021895190]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid5" unique_id=767601398]
+visible = false
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid6" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=2010291729]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid6" unique_id=58470513]
+visible = false
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid7" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1328271573]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid7" unique_id=1833758328]
+layout_mode = 2
+text = "1"
+label_settings = SubResource("LabelSettings_oqv46")
+horizontal_alignment = 1
+
+[node name="Grid8" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=75562387]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid8" unique_id=784031606]
+layout_mode = 2
+text = "2"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid9" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1943446704]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid9" unique_id=1349393426]
+layout_mode = 2
+text = "3"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid10" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=2087265066]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid10" unique_id=850397638]
+layout_mode = 2
+text = "4"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid11" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=25255331]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid11" unique_id=675392466]
+layout_mode = 2
+text = "5"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid12" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=481101106]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid12" unique_id=884959492]
+layout_mode = 2
+text = "6"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid13" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1602279134]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid13" unique_id=228239246]
+layout_mode = 2
+text = "7"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid14" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=141045263]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid14" unique_id=1672169378]
+layout_mode = 2
+text = "8"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid15" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=2030021340]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid15" unique_id=1542425056]
+layout_mode = 2
+text = "9"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid16" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1651395296]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid16" unique_id=1442336635]
+layout_mode = 2
+text = "10"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid17" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=2085610280]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid17" unique_id=1344282428]
+layout_mode = 2
+text = "11"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid18" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=213720273]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid18" unique_id=1509479187]
+layout_mode = 2
+text = "12"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid19" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1704228412]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid19" unique_id=1992005982]
+layout_mode = 2
+text = "13"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid20" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=940780012]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid20" unique_id=837080155]
+layout_mode = 2
+text = "14"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid21" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=199675151]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid21" unique_id=1373141521]
+layout_mode = 2
+text = "15"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid22" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1142117419]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid22" unique_id=202408823]
+layout_mode = 2
+text = "16"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid23" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=945731763]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid23" unique_id=152497764]
+layout_mode = 2
+text = "17"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid24" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=130444487]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid24" unique_id=394896347]
+layout_mode = 2
+text = "18"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid25" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=27097232]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid25" unique_id=1807954836]
+layout_mode = 2
+text = "19"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid26" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=180536929]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid26" unique_id=126883005]
+layout_mode = 2
+text = "20"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid27" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=262353256]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid27" unique_id=541691762]
+layout_mode = 2
+text = "21"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid28" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1771161834]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid28" unique_id=737752291]
+layout_mode = 2
+text = "22"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid29" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=509166685]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid29" unique_id=1487678738]
+layout_mode = 2
+text = "23"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid30" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=715883476]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid30" unique_id=1821061568]
+layout_mode = 2
+text = "24"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid31" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=833259090]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid31" unique_id=600799571]
+layout_mode = 2
+text = "25"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid32" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=2041632512]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid32" unique_id=1987107293]
+layout_mode = 2
+text = "26"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid33" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=781616864]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid33" unique_id=118073232]
+layout_mode = 2
+text = "27"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid34" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=749312301]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid34" unique_id=1522267195]
+layout_mode = 2
+text = "28"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid35" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=717988858]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid35" unique_id=1711939803]
+layout_mode = 2
+text = "29"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid36" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=528972122]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid36" unique_id=562444978]
+layout_mode = 2
+text = "30"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid37" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=82865086]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid37" unique_id=1580563893]
+layout_mode = 2
+text = "31"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid38" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1027767121]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid38" unique_id=122251738]
+visible = false
+layout_mode = 2
+text = "31"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid39" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1104546752]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid39" unique_id=1655326705]
+visible = false
+layout_mode = 2
+text = "31"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid40" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1878672947]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid40" unique_id=530827905]
+visible = false
+layout_mode = 2
+text = "31"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid41" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1907473905]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid41" unique_id=531369048]
+visible = false
+layout_mode = 2
+text = "31"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="Grid42" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=1088646030]
+custom_minimum_size = Vector2(20, 0)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer/Grid42" unique_id=526520930]
+visible = false
+layout_mode = 2
+text = "31"
+label_settings = SubResource("LabelSettings_1vqbu")
+horizontal_alignment = 1
+
+[node name="TopLeft" type="MarginContainer" parent="." unique_id=518549142]
+custom_minimum_size = Vector2(160, 100)
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="ManagerContainer" type="HBoxContainer" parent="TopLeft" unique_id=487729164]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_hshcj")
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Manager" type="VBoxContainer" parent="TopLeft/ManagerContainer" unique_id=1466931619]
+custom_minimum_size = Vector2(0, 68)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=1490727355]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7y1o6")
+
+[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/PanelContainer" unique_id=1229003117]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "Turno de:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=588529948]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ManagerNumber" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager/HBoxContainer" unique_id=1179742748]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+theme_override_styles/panel = SubResource("StyleBoxFlat_aqdmb")
+
+[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/HBoxContainer/ManagerNumber" unique_id=333057362]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "1"
+horizontal_alignment = 1
+
+[node name="ManagerName" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager/HBoxContainer" unique_id=2023908568]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_svagy")
+
+[node name="Label2" type="Label" parent="TopLeft/ManagerContainer/Manager/HBoxContainer/ManagerName" unique_id=775350809]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 12
+text = "Nico"
+
+[node name="ClubName" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=1899818469]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_tsv7u")
+
+[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/ClubName" unique_id=1449423221]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_font_sizes/font_size = 11
+text = "Villarreal"
+horizontal_alignment = 1
+
+[node name="Club" type="PanelContainer" parent="TopLeft/ManagerContainer" unique_id=1675136925]
 layout_mode = 2
 size_flags_horizontal = 4
-text = "2ª División"
-horizontal_alignment = 1
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/ManagerContainer/Club" unique_id=1852277804]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_p1xbd")
+stretch_mode = 5
 
 [node name="Body" type="VBoxContainer" parent="." unique_id=548524236]
 anchors_preset = 8
@@ -629,7 +1271,7 @@ alignment = 1
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
-theme_override_constants/separation = 8
+theme_override_constants/separation = 10
 alignment = 1
 
 [node name="StatsContainer" type="PanelContainer" parent="Body/Row1" unique_id=1644136907]
@@ -661,12 +1303,12 @@ theme_override_constants/separation = 20
 
 [node name="Tables" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=887151154]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "CLASIFICACION"
 icon = ExtResource("5_ruua2")
@@ -676,12 +1318,12 @@ expand_icon = true
 
 [node name="Results" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=662577706]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "RESULTADOS"
 icon = ExtResource("6_p1xbd")
@@ -691,12 +1333,12 @@ expand_icon = true
 
 [node name="Calendar" type="Button" parent="Body/Row1/StatsContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=1648251542]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "CALENDARIO"
 icon = ExtResource("7_vl208")
@@ -733,12 +1375,12 @@ theme_override_constants/separation = 20
 
 [node name="LineUp" type="Button" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=777148079]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "ALINEACION"
 icon = ExtResource("7_vl208")
@@ -748,12 +1390,12 @@ expand_icon = true
 
 [node name="Tactics" type="Button" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=988865502]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "TACTICAS"
 icon = ExtResource("8_7y1o6")
@@ -763,12 +1405,12 @@ expand_icon = true
 
 [node name="Rival" type="Button" parent="Body/Row1/CoachContainer/VBoxContainer/ManagerButtons/HBoxContainer" unique_id=714516617]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "VER RIVAL"
 icon = ExtResource("9_aqdmb")
@@ -778,7 +1420,7 @@ expand_icon = true
 
 [node name="Row2" type="HBoxContainer" parent="Body" unique_id=669472376]
 layout_mode = 2
-theme_override_constants/separation = 8
+theme_override_constants/separation = 10
 alignment = 1
 
 [node name="TransfersContainer" type="PanelContainer" parent="Body/Row2" unique_id=946191446]
@@ -810,12 +1452,12 @@ theme_override_constants/separation = 20
 
 [node name="Buy" type="Button" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersButtons/HBoxContainer" unique_id=433293751]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "FICHAR"
 icon = ExtResource("10_tsv7u")
@@ -825,12 +1467,12 @@ expand_icon = true
 
 [node name="Sell" type="Button" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersButtons/HBoxContainer" unique_id=822710830]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "PLANTILLA"
 icon = ExtResource("11_4sa0x")
@@ -840,12 +1482,12 @@ expand_icon = true
 
 [node name="Sell2" type="Button" parent="Body/Row2/TransfersContainer/VBoxContainer/TransfersButtons/HBoxContainer" unique_id=1196606144]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "EMPLEADOS"
 icon = ExtResource("11_4sa0x")
@@ -882,12 +1524,12 @@ theme_override_constants/separation = 20
 
 [node name="LineUp" type="Button" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesButtons/HBoxContainer" unique_id=1105134722]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "CAJA"
 icon = ExtResource("12_i2nm8")
@@ -897,12 +1539,12 @@ expand_icon = true
 
 [node name="Tactics" type="Button" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesButtons/HBoxContainer" unique_id=1748913756]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "DECISIONES"
 icon = ExtResource("13_m2npn")
@@ -912,12 +1554,12 @@ expand_icon = true
 
 [node name="Tactics2" type="Button" parent="Body/Row2/FinancesContainer/VBoxContainer/FinancesButtons/HBoxContainer" unique_id=2130038075]
 texture_filter = 1
-custom_minimum_size = Vector2(60, 45)
+custom_minimum_size = Vector2(80, 55)
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_fonts/font = ExtResource("4_asv7p")
-theme_override_font_sizes/font_size = 15
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "ESTADIO"
 icon = ExtResource("13_m2npn")
@@ -925,7 +1567,31 @@ icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
 
-[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1832724145]
+[node name="GameModeContainer" type="VBoxContainer" parent="." unique_id=702222736]
+custom_minimum_size = Vector2(120, 50)
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -110.0
+offset_top = -50.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 3
+theme = ExtResource("1_hshcj")
+theme_override_constants/separation = -6
+
+[node name="Label" type="Label" parent="GameModeContainer" unique_id=203337197]
+layout_mode = 2
+text = "Liga"
+
+[node name="Label2" type="Label" parent="GameModeContainer" unique_id=235281118]
+layout_mode = 2
+text = "   ManagerPro"
+
+[node name="GameName" type="VBoxContainer" parent="." unique_id=1832724145]
+custom_minimum_size = Vector2(0, 85)
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
@@ -935,7 +1601,7 @@ grow_vertical = 0
 size_flags_horizontal = 4
 alignment = 1
 
-[node name="Label" type="Label" parent="VBoxContainer" unique_id=2085068760]
+[node name="Label" type="Label" parent="GameName" unique_id=2085068760]
 layout_mode = 2
 text = "GOAL 
 DANGER"
@@ -943,7 +1609,7 @@ label_settings = SubResource("LabelSettings_4wfe4")
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="VBoxContainer" unique_id=292399296]
+[node name="Label2" type="Label" parent="GameName" unique_id=292399296]
 visible = false
 custom_minimum_size = Vector2(100, 0)
 layout_mode = 2
@@ -952,3 +1618,43 @@ text = "Managment, Tactics
 label_settings = SubResource("LabelSettings_l5g12")
 horizontal_alignment = 1
 autowrap_mode = 2
+
+[node name="RowNews" type="PanelContainer" parent="." unique_id=670382938]
+custom_minimum_size = Vector2(500, 120)
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -124.0
+offset_top = -52.0
+offset_right = 124.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_3rr56")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="RowNews" unique_id=1982606735]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="TitleContainer" type="PanelContainer" parent="RowNews/VBoxContainer" unique_id=270191819]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7uddd")
+
+[node name="Titile" type="Label" parent="RowNews/VBoxContainer/TitleContainer" unique_id=955950786]
+layout_mode = 2
+text = "DANGER NEWS"
+label_settings = SubResource("LabelSettings_msrk7")
+horizontal_alignment = 1
+
+[node name="ContainContainer" type="PanelContainer" parent="RowNews/VBoxContainer" unique_id=1875847652]
+custom_minimum_size = Vector2(0, 60)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_1vqbu")
+
+[node name="ContainLabel" type="Label" parent="RowNews/VBoxContainer/ContainContainer" unique_id=1602276943]
+layout_mode = 2
+size_flags_vertical = 0
+text = "¡Atención! Tienes bajas en tu alineación."
+label_settings = SubResource("LabelSettings_06xsx")
