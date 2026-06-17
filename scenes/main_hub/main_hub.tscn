@@ -107,49 +107,6 @@ font = ExtResource("2_bi4pt")
 font_size = 20
 font_color = Color(1, 1, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1oxo"]
-bg_color = Color(0.2123048, 0.21230489, 0.21230471, 1)
-draw_center = false
-shadow_color = Color(0, 0, 0, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cst53"]
-content_margin_top = 2.0
-content_margin_bottom = 1.0
-bg_color = Color(0.14901961, 0.14901961, 0.36862746, 1)
-corner_radius_top_right = 10
-
-[sub_resource type="LabelSettings" id="LabelSettings_7uddd"]
-font = ExtResource("2_bi4pt")
-font_size = 10
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqv46"]
-content_margin_left = 1.0
-content_margin_top = 2.0
-content_margin_right = 1.0
-content_margin_bottom = 2.0
-bg_color = Color(0.19215687, 0.21176471, 0.6392157, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_du425"]
-font = ExtResource("2_bi4pt")
-font_size = 6
-font_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msrk7"]
-content_margin_top = 1.0
-content_margin_bottom = 3.0
-bg_color = Color(0.79199904, 0.79199916, 0.7919989, 1)
-corner_radius_bottom_right = 10
-
-[sub_resource type="LabelSettings" id="LabelSettings_1vqbu"]
-font = ExtResource("2_bi4pt")
-font_size = 6
-font_color = Color(0, 0, 0, 1)
-
-[sub_resource type="LabelSettings" id="LabelSettings_oqv46"]
-font = ExtResource("2_bi4pt")
-font_size = 6
-font_color = Color(1, 0, 0, 1)
-
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7y1o6"]
 content_margin_left = 10.0
 content_margin_right = 10.0
@@ -177,7 +134,7 @@ border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0, 0, 0, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsv7u"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_06xsx"]
 content_margin_top = 3.0
 content_margin_bottom = 3.0
 bg_color = Color(0.09019608, 0.1764706, 0.44705883, 1)
@@ -193,6 +150,100 @@ border_width_top = 1
 border_width_right = 1
 border_width_bottom = 1
 border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p1oxo"]
+bg_color = Color(0.2123048, 0.21230489, 0.21230471, 1)
+draw_center = false
+shadow_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_cst53"]
+content_margin_top = 2.0
+content_margin_bottom = 1.0
+bg_color = Color(0.14901961, 0.14901961, 0.36862746, 1)
+corner_radius_top_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_7uddd"]
+font = ExtResource("2_bi4pt")
+font_size = 12
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oqv46"]
+content_margin_left = 1.0
+content_margin_top = 2.0
+content_margin_right = 1.0
+content_margin_bottom = 2.0
+bg_color = Color(0.19215687, 0.21176471, 0.6392157, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_du425"]
+font = ExtResource("2_bi4pt")
+font_size = 10
+font_color = Color(0.78352344, 0.7835234, 0.7835234, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_msrk7"]
+content_margin_left = 2.0
+content_margin_top = 2.0
+content_margin_right = 2.0
+content_margin_bottom = 3.0
+bg_color = Color(0.79199904, 0.79199916, 0.7919989, 1)
+corner_radius_bottom_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_1vqbu"]
+font = ExtResource("2_bi4pt")
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_oqv46"]
+font = ExtResource("2_bi4pt")
+font_size = 10
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_du425"]
+content_margin_left = 10.0
+content_margin_right = 10.0
+bg_color = Color(0.8452296, 0.8973989, 1, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_kw462"]
+font = ExtResource("2_bi4pt")
+font_size = 10
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0kwvx"]
+bg_color = Color(0, 0, 0.7882353, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tkruu"]
+content_margin_left = 5.0
+bg_color = Color(0.84705883, 0.8980392, 1, 1)
+border_width_left = 1
+border_width_right = 1
+border_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_l1d7p"]
+font = ExtResource("2_bi4pt")
+font_color = Color(1, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tsv7u"]
+content_margin_top = 3.0
+content_margin_bottom = 3.0
+bg_color = Color(0.84705883, 0.8980392, 1, 1)
+border_width_left = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0, 0, 0, 1)
+corner_radius_bottom_right = 10
+
+[sub_resource type="LabelSettings" id="LabelSettings_6kw8v"]
+font = ExtResource("2_bi4pt")
+font_size = 12
+font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_svagy"]
 
@@ -620,6 +671,86 @@ text = "1"
 label_settings = SubResource("LabelSettings_hshcj")
 horizontal_alignment = 1
 
+[node name="TopLeft" type="MarginContainer" parent="." unique_id=518549142]
+custom_minimum_size = Vector2(200, 100)
+offset_right = 160.0
+offset_bottom = 100.0
+
+[node name="ManagerContainer" type="HBoxContainer" parent="TopLeft" unique_id=487729164]
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("1_hshcj")
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Manager" type="VBoxContainer" parent="TopLeft/ManagerContainer" unique_id=1466931619]
+custom_minimum_size = Vector2(110, 68)
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="PanelContainer" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=1490727355]
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_7y1o6")
+
+[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/PanelContainer" unique_id=1229003117]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "Turno de:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=588529948]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ManagerNumber" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager/HBoxContainer" unique_id=1179742748]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 0.2
+theme_override_styles/panel = SubResource("StyleBoxFlat_aqdmb")
+
+[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/HBoxContainer/ManagerNumber" unique_id=333057362]
+layout_mode = 2
+theme_override_font_sizes/font_size = 10
+text = "1"
+horizontal_alignment = 1
+
+[node name="ManagerName" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager/HBoxContainer" unique_id=2023908568]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxFlat_svagy")
+
+[node name="Label2" type="Label" parent="TopLeft/ManagerContainer/Manager/HBoxContainer/ManagerName" unique_id=775350809]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 14
+text = "Nico"
+
+[node name="ClubName" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=1899818469]
+custom_minimum_size = Vector2(0, 22)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_06xsx")
+
+[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/ClubName" unique_id=1449423221]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
+theme_override_font_sizes/font_size = 14
+text = "Villarreal"
+horizontal_alignment = 1
+
+[node name="Club" type="PanelContainer" parent="TopLeft/ManagerContainer" unique_id=1675136925]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
+
+[node name="TextureRect" type="TextureRect" parent="TopLeft/ManagerContainer/Club" unique_id=1852277804]
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("3_p1xbd")
+stretch_mode = 5
+
 [node name="TopRight" type="MarginContainer" parent="." unique_id=1556089768]
 custom_minimum_size = Vector2(160, 100)
 anchors_preset = 1
@@ -630,6 +761,7 @@ offset_bottom = 80.0
 grow_horizontal = 0
 
 [node name="Calendar" type="PanelContainer" parent="TopRight" unique_id=1798636601]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 6
 theme_override_styles/panel = SubResource("StyleBoxFlat_p1oxo")
@@ -736,8 +868,8 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_msrk7")
 
 [node name="GridContainer" type="GridContainer" parent="TopRight/Calendar/VBoxContainer/Days" unique_id=1830248283]
 layout_mode = 2
-theme_override_constants/h_separation = 0
-theme_override_constants/v_separation = 2
+theme_override_constants/h_separation = 3
+theme_override_constants/v_separation = 3
 columns = 7
 
 [node name="Grid1" type="MarginContainer" parent="TopRight/Calendar/VBoxContainer/Days/GridContainer" unique_id=990236486]
@@ -1171,81 +1303,85 @@ text = "31"
 label_settings = SubResource("LabelSettings_1vqbu")
 horizontal_alignment = 1
 
-[node name="TopLeft" type="MarginContainer" parent="." unique_id=518549142]
-custom_minimum_size = Vector2(160, 100)
-offset_right = 40.0
-offset_bottom = 40.0
-
-[node name="ManagerContainer" type="HBoxContainer" parent="TopLeft" unique_id=487729164]
+[node name="DayContainer" type="HBoxContainer" parent="TopRight" unique_id=622653903]
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("1_hshcj")
 theme_override_constants/separation = 0
 alignment = 1
 
-[node name="Manager" type="VBoxContainer" parent="TopLeft/ManagerContainer" unique_id=1466931619]
-custom_minimum_size = Vector2(0, 68)
+[node name="Day" type="VBoxContainer" parent="TopRight/DayContainer" unique_id=1889587611]
+custom_minimum_size = Vector2(110, 68)
 layout_mode = 2
 size_flags_vertical = 4
-theme_override_constants/separation = 0
+theme_override_constants/separation = -1
 alignment = 1
 
-[node name="PanelContainer" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=1490727355]
+[node name="PanelContainer" type="PanelContainer" parent="TopRight/DayContainer/Day" unique_id=174381451]
+custom_minimum_size = Vector2(0, 16)
 layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_7y1o6")
+theme_override_styles/panel = SubResource("StyleBoxFlat_du425")
 
-[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/PanelContainer" unique_id=1229003117]
+[node name="Label" type="Label" parent="TopRight/DayContainer/Day/PanelContainer" unique_id=1609068470]
 layout_mode = 2
 theme_override_font_sizes/font_size = 13
-text = "Turno de:"
+text = "AGOSTO"
+label_settings = SubResource("LabelSettings_kw462")
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="HBoxContainer" type="HBoxContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=588529948]
+[node name="HBoxContainer" type="HBoxContainer" parent="TopRight/DayContainer/Day" unique_id=608714699]
 layout_mode = 2
 theme_override_constants/separation = 0
 
-[node name="ManagerNumber" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager/HBoxContainer" unique_id=1179742748]
+[node name="ManagerNumber" type="PanelContainer" parent="TopRight/DayContainer/Day/HBoxContainer" unique_id=491902988]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 0.2
-theme_override_styles/panel = SubResource("StyleBoxFlat_aqdmb")
+theme_override_styles/panel = SubResource("StyleBoxFlat_0kwvx")
 
-[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/HBoxContainer/ManagerNumber" unique_id=333057362]
+[node name="Label" type="Label" parent="TopRight/DayContainer/Day/HBoxContainer/ManagerNumber" unique_id=111504268]
 layout_mode = 2
 theme_override_font_sizes/font_size = 10
 text = "1"
 horizontal_alignment = 1
 
-[node name="ManagerName" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager/HBoxContainer" unique_id=2023908568]
+[node name="DayNumber" type="PanelContainer" parent="TopRight/DayContainer/Day/HBoxContainer" unique_id=899612313]
 custom_minimum_size = Vector2(0, 22)
 layout_mode = 2
 size_flags_horizontal = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_svagy")
+theme_override_styles/panel = SubResource("StyleBoxFlat_tkruu")
 
-[node name="Label2" type="Label" parent="TopLeft/ManagerContainer/Manager/HBoxContainer/ManagerName" unique_id=775350809]
+[node name="Label2" type="Label" parent="TopRight/DayContainer/Day/HBoxContainer/DayNumber" unique_id=967736670]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 12
-text = "Nico"
+theme_override_font_sizes/font_size = 14
+text = "1"
+label_settings = SubResource("LabelSettings_l1d7p")
+horizontal_alignment = 1
 
-[node name="ClubName" type="PanelContainer" parent="TopLeft/ManagerContainer/Manager" unique_id=1899818469]
+[node name="Year" type="PanelContainer" parent="TopRight/DayContainer/Day" unique_id=1237050388]
 custom_minimum_size = Vector2(0, 22)
 layout_mode = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_tsv7u")
 
-[node name="Label" type="Label" parent="TopLeft/ManagerContainer/Manager/ClubName" unique_id=1449423221]
+[node name="Label" type="Label" parent="TopRight/DayContainer/Day/Year" unique_id=1615463103]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.83889705, 0.83889705, 0.838897, 1)
-theme_override_font_sizes/font_size = 11
-text = "Villarreal"
+theme_override_font_sizes/font_size = 14
+text = "2026"
+label_settings = SubResource("LabelSettings_6kw8v")
 horizontal_alignment = 1
 
-[node name="Club" type="PanelContainer" parent="TopLeft/ManagerContainer" unique_id=1675136925]
+[node name="Club" type="PanelContainer" parent="TopRight/DayContainer" unique_id=418484763]
+visible = false
 layout_mode = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 theme_override_styles/panel = SubResource("StyleBoxFlat_4sa0x")
 
-[node name="TextureRect" type="TextureRect" parent="TopLeft/ManagerContainer/Club" unique_id=1852277804]
+[node name="TextureRect" type="TextureRect" parent="TopRight/DayContainer/Club" unique_id=1274783056]
 texture_filter = 1
 layout_mode = 2
 texture = ExtResource("3_p1xbd")
