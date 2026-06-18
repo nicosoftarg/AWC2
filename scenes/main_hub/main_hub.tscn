@@ -15,14 +15,14 @@
 [ext_resource type="Texture2D" uid="uid://cwa0y47bqmfj7" path="res://assets/placeholders/hub/alineacion.png" id="7_vl208"]
 [ext_resource type="Texture2D" uid="uid://b6dqfecgyc6a5" path="res://assets/graphics/ui/buttons_icons/icon_windows.png" id="8_1vqbu"]
 [ext_resource type="Texture2D" uid="uid://c8qbeno32mbiw" path="res://assets/placeholders/hub/tactics.png" id="8_7y1o6"]
+[ext_resource type="Texture2D" uid="uid://1e1keqykikud" path="res://assets/graphics/ui/buttons_icons/icon_view_match.png" id="9_7uddd"]
 [ext_resource type="Texture2D" uid="uid://cuc358ctv4o5l" path="res://assets/placeholders/hub/rival.png" id="9_aqdmb"]
+[ext_resource type="Texture2D" uid="uid://2ny4jfbbwbpf" path="res://assets/graphics/ui/buttons_icons/icon_save.png" id="10_msrk7"]
 [ext_resource type="Texture2D" uid="uid://cb0nbehokuiui" path="res://assets/placeholders/hub/buy_player.png" id="10_tsv7u"]
+[ext_resource type="Texture2D" uid="uid://cfnqtum6lgov8" path="res://assets/graphics/ui/buttons_icons/icon_news.png" id="11_1vqbu"]
 [ext_resource type="Texture2D" uid="uid://dphf8sdul8qjp" path="res://assets/placeholders/hub/sell_player.png" id="11_4sa0x"]
 [ext_resource type="Texture2D" uid="uid://jdqcdl1khom2" path="res://assets/placeholders/hub/cash.png" id="12_i2nm8"]
 [ext_resource type="Texture2D" uid="uid://bcw2p7tcynjlq" path="res://assets/placeholders/hub/decisions.png" id="13_m2npn"]
-[ext_resource type="Texture2D" uid="uid://c1c3xrdmfwqpy" path="res://assets/placeholders/hub/menu_icon.png" id="15_4sa0x"]
-[ext_resource type="Texture2D" uid="uid://dqpew46di0mlc" path="res://assets/placeholders/hub/save_icon.png" id="16_geauy"]
-[ext_resource type="Texture2D" uid="uid://reaxtmme8qfy" path="res://assets/placeholders/hub/news_icon.png" id="17_qx2hh"]
 [ext_resource type="Texture2D" uid="uid://ciw0vtafrriaa" path="res://assets/placeholders/hub/play_icon.png" id="18_l5g12"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
@@ -200,6 +200,7 @@ font_color = Color(1, 0, 0, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_du425"]
 content_margin_left = 10.0
+content_margin_top = 3.0
 content_margin_right = 10.0
 bg_color = Color(0.8452296, 0.8973989, 1, 1)
 border_width_left = 1
@@ -528,6 +529,7 @@ theme_override_constants/separation = 22
 alignment = 1
 
 [node name="GameTypeButton" type="Button" parent="RightBar/VBoxContainer" unique_id=335112069]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -537,9 +539,10 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Tipo de
 partido
 "
-icon = ExtResource("15_4sa0x")
+icon = ExtResource("9_7uddd")
 
 [node name="SaveButton" type="Button" parent="RightBar/VBoxContainer" unique_id=452840994]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -548,9 +551,10 @@ theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Grabar 
 Liga"
-icon = ExtResource("16_geauy")
+icon = ExtResource("10_msrk7")
 
 [node name="NewsButton" type="Button" parent="RightBar/VBoxContainer" unique_id=391408693]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -558,7 +562,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Noticias"
-icon = ExtResource("17_qx2hh")
+icon = ExtResource("11_1vqbu")
 
 [node name="PlayButton" type="Button" parent="RightBar/VBoxContainer" unique_id=695590494]
 custom_minimum_size = Vector2(0, 38)
