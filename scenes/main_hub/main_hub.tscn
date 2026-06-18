@@ -7,9 +7,13 @@
 [ext_resource type="FontFile" uid="uid://b0dp1rkskx15o" path="res://assets/fonts/Futura Extra Black Condensed Italic.otf" id="3_bi4pt"]
 [ext_resource type="Texture2D" uid="uid://c35ekuw1ayfu6" path="res://assets/placeholders/logos/logo_villarreal.png" id="3_p1xbd"]
 [ext_resource type="FontFile" uid="uid://dayae0mllaayf" path="res://assets/fonts/5 Text Uppercase.ttf" id="4_asv7p"]
+[ext_resource type="Texture2D" uid="uid://clklkf48q4qtl" path="res://assets/graphics/ui/buttons_icons/icon_menu.png" id="5_3rr56"]
 [ext_resource type="Texture2D" uid="uid://duwr7qrntog8a" path="res://assets/placeholders/hub/CLASIFICACION.PNG" id="5_ruua2"]
+[ext_resource type="Texture2D" uid="uid://iw5brxoiap0a" path="res://assets/graphics/ui/buttons_icons/icon_options.png" id="6_7uddd"]
 [ext_resource type="Texture2D" uid="uid://dakc0nv73gv3x" path="res://assets/placeholders/hub/results.png" id="6_p1xbd"]
+[ext_resource type="Texture2D" uid="uid://d02q27g1nfp27" path="res://assets/graphics/ui/buttons_icons/icon_help.png" id="7_msrk7"]
 [ext_resource type="Texture2D" uid="uid://cwa0y47bqmfj7" path="res://assets/placeholders/hub/alineacion.png" id="7_vl208"]
+[ext_resource type="Texture2D" uid="uid://b6dqfecgyc6a5" path="res://assets/graphics/ui/buttons_icons/icon_windows.png" id="8_1vqbu"]
 [ext_resource type="Texture2D" uid="uid://c8qbeno32mbiw" path="res://assets/placeholders/hub/tactics.png" id="8_7y1o6"]
 [ext_resource type="Texture2D" uid="uid://cuc358ctv4o5l" path="res://assets/placeholders/hub/rival.png" id="9_aqdmb"]
 [ext_resource type="Texture2D" uid="uid://cb0nbehokuiui" path="res://assets/placeholders/hub/buy_player.png" id="10_tsv7u"]
@@ -31,9 +35,7 @@ shadow_size = 1
 shadow_offset = Vector2(1, 1)
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l5g12"]
-content_margin_top = 2.0
 content_margin_right = 20.0
-content_margin_bottom = 2.0
 bg_color = Color(0.8104176, 0.81041765, 0.8104174, 1)
 border_width_left = 1
 border_width_top = 1
@@ -463,6 +465,7 @@ theme_override_constants/separation = 22
 alignment = 1
 
 [node name="MenuButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=1679050769]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -471,9 +474,10 @@ theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Menú 
 Principal"
-icon = ExtResource("15_4sa0x")
+icon = ExtResource("5_3rr56")
 
 [node name="OptionsButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=424012438]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -481,9 +485,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Opciones"
-icon = ExtResource("16_geauy")
+icon = ExtResource("6_7uddd")
 
 [node name="HelpButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=203052753]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -491,9 +496,10 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Ayuda"
-icon = ExtResource("17_qx2hh")
+icon = ExtResource("7_msrk7")
 
 [node name="QuitButton" type="Button" parent="LeftBar/VBoxContainer" unique_id=2032832521]
+texture_filter = 1
 custom_minimum_size = Vector2(0, 38)
 layout_mode = 2
 theme = ExtResource("1_hshcj")
@@ -502,7 +508,7 @@ theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Salir a
 Windows"
-icon = ExtResource("18_l5g12")
+icon = ExtResource("8_1vqbu")
 
 [node name="RightBar" type="PanelContainer" parent="." unique_id=803603913]
 anchors_preset = 11
