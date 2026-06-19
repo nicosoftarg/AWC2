@@ -8,9 +8,7 @@
 [ext_resource type="Texture2D" uid="uid://c35ekuw1ayfu6" path="res://assets/placeholders/logos/logo_villarreal.png" id="3_p1xbd"]
 [ext_resource type="FontFile" uid="uid://dayae0mllaayf" path="res://assets/fonts/5 Text Uppercase.ttf" id="4_asv7p"]
 [ext_resource type="Texture2D" uid="uid://clklkf48q4qtl" path="res://assets/graphics/ui/buttons_icons/icon_menu.png" id="5_3rr56"]
-[ext_resource type="Texture2D" uid="uid://duwr7qrntog8a" path="res://assets/placeholders/hub/CLASIFICACION.PNG" id="5_ruua2"]
 [ext_resource type="Texture2D" uid="uid://iw5brxoiap0a" path="res://assets/graphics/ui/buttons_icons/icon_options.png" id="6_7uddd"]
-[ext_resource type="Texture2D" uid="uid://dakc0nv73gv3x" path="res://assets/placeholders/hub/results.png" id="6_p1xbd"]
 [ext_resource type="Texture2D" uid="uid://d02q27g1nfp27" path="res://assets/graphics/ui/buttons_icons/icon_help.png" id="7_msrk7"]
 [ext_resource type="Texture2D" uid="uid://cwa0y47bqmfj7" path="res://assets/placeholders/hub/alineacion.png" id="7_vl208"]
 [ext_resource type="Texture2D" uid="uid://b6dqfecgyc6a5" path="res://assets/graphics/ui/buttons_icons/icon_windows.png" id="8_1vqbu"]
@@ -21,9 +19,11 @@
 [ext_resource type="Texture2D" uid="uid://cb0nbehokuiui" path="res://assets/placeholders/hub/buy_player.png" id="10_tsv7u"]
 [ext_resource type="Texture2D" uid="uid://cfnqtum6lgov8" path="res://assets/graphics/ui/buttons_icons/icon_news.png" id="11_1vqbu"]
 [ext_resource type="Texture2D" uid="uid://dphf8sdul8qjp" path="res://assets/placeholders/hub/sell_player.png" id="11_4sa0x"]
+[ext_resource type="Texture2D" uid="uid://bjtj2fuhuk1kx" path="res://assets/graphics/ui/buttons_icons/icon_play.png" id="12_7uddd"]
 [ext_resource type="Texture2D" uid="uid://jdqcdl1khom2" path="res://assets/placeholders/hub/cash.png" id="12_i2nm8"]
 [ext_resource type="Texture2D" uid="uid://bcw2p7tcynjlq" path="res://assets/placeholders/hub/decisions.png" id="13_m2npn"]
-[ext_resource type="Texture2D" uid="uid://ciw0vtafrriaa" path="res://assets/placeholders/hub/play_icon.png" id="18_l5g12"]
+[ext_resource type="Texture2D" uid="uid://8axk6vq0xccc" path="res://assets/graphics/ui/main_hub_buttons/main_hub_button_table.png" id="15_7uddd"]
+[ext_resource type="Texture2D" uid="uid://bssu13cxh8qyp" path="res://assets/graphics/ui/main_hub_buttons/main_hub_button_results.png" id="16_msrk7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
 bg_color = Color(3.8023293e-06, 0.44592398, 0.57976294, 1)
@@ -572,7 +572,7 @@ theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_font_sizes/font_size = 13
 theme_override_styles/normal = SubResource("StyleBoxFlat_l5g12")
 text = "Jugar"
-icon = ExtResource("18_l5g12")
+icon = ExtResource("12_7uddd")
 
 [node name="Header" type="VBoxContainer" parent="." unique_id=2143380276]
 anchors_preset = 10
@@ -1457,7 +1457,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "CLASIFICACION"
-icon = ExtResource("5_ruua2")
+icon = ExtResource("15_7uddd")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
@@ -1472,7 +1472,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "RESULTADOS"
-icon = ExtResource("6_p1xbd")
+icon = ExtResource("16_msrk7")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
