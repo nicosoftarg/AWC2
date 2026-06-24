@@ -10,13 +10,9 @@
 [ext_resource type="Texture2D" uid="uid://clklkf48q4qtl" path="res://assets/graphics/ui/buttons_icons/icon_menu.png" id="5_3rr56"]
 [ext_resource type="Texture2D" uid="uid://iw5brxoiap0a" path="res://assets/graphics/ui/buttons_icons/icon_options.png" id="6_7uddd"]
 [ext_resource type="Texture2D" uid="uid://d02q27g1nfp27" path="res://assets/graphics/ui/buttons_icons/icon_help.png" id="7_msrk7"]
-[ext_resource type="Texture2D" uid="uid://cwa0y47bqmfj7" path="res://assets/placeholders/hub/alineacion.png" id="7_vl208"]
 [ext_resource type="Texture2D" uid="uid://b6dqfecgyc6a5" path="res://assets/graphics/ui/buttons_icons/icon_windows.png" id="8_1vqbu"]
-[ext_resource type="Texture2D" uid="uid://c8qbeno32mbiw" path="res://assets/placeholders/hub/tactics.png" id="8_7y1o6"]
 [ext_resource type="Texture2D" uid="uid://1e1keqykikud" path="res://assets/graphics/ui/buttons_icons/icon_view_match.png" id="9_7uddd"]
-[ext_resource type="Texture2D" uid="uid://cuc358ctv4o5l" path="res://assets/placeholders/hub/rival.png" id="9_aqdmb"]
 [ext_resource type="Texture2D" uid="uid://2ny4jfbbwbpf" path="res://assets/graphics/ui/buttons_icons/icon_save.png" id="10_msrk7"]
-[ext_resource type="Texture2D" uid="uid://cb0nbehokuiui" path="res://assets/placeholders/hub/buy_player.png" id="10_tsv7u"]
 [ext_resource type="Texture2D" uid="uid://cfnqtum6lgov8" path="res://assets/graphics/ui/buttons_icons/icon_news.png" id="11_1vqbu"]
 [ext_resource type="Texture2D" uid="uid://dphf8sdul8qjp" path="res://assets/placeholders/hub/sell_player.png" id="11_4sa0x"]
 [ext_resource type="Texture2D" uid="uid://bjtj2fuhuk1kx" path="res://assets/graphics/ui/buttons_icons/icon_play.png" id="12_7uddd"]
@@ -24,6 +20,11 @@
 [ext_resource type="Texture2D" uid="uid://bcw2p7tcynjlq" path="res://assets/placeholders/hub/decisions.png" id="13_m2npn"]
 [ext_resource type="Texture2D" uid="uid://8axk6vq0xccc" path="res://assets/graphics/ui/main_hub_buttons/main_hub_button_table.png" id="15_7uddd"]
 [ext_resource type="Texture2D" uid="uid://bssu13cxh8qyp" path="res://assets/graphics/ui/main_hub_buttons/main_hub_button_results.png" id="16_msrk7"]
+[ext_resource type="Texture2D" uid="uid://c0xmbv8oday88" path="res://assets/graphics/ui/main_hub_buttons/calendar.png" id="17_msrk7"]
+[ext_resource type="Texture2D" uid="uid://bkatrnbjprn85" path="res://assets/graphics/ui/main_hub_buttons/main_hub_button_lineup.png" id="18_msrk7"]
+[ext_resource type="Texture2D" uid="uid://4mlekgovup48" path="res://assets/graphics/ui/main_hub_buttons/tactics.png" id="19_msrk7"]
+[ext_resource type="Texture2D" uid="uid://cntdtppbkf32f" path="res://assets/graphics/ui/main_hub_buttons/rival_view.png" id="20_msrk7"]
+[ext_resource type="Texture2D" uid="uid://dbkw02rjnd6gb" path="res://assets/graphics/ui/main_hub_buttons/buy.png" id="21_msrk7"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i2nm8"]
 bg_color = Color(3.8023293e-06, 0.44592398, 0.57976294, 1)
@@ -1487,7 +1488,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "CALENDARIO"
-icon = ExtResource("7_vl208")
+icon = ExtResource("17_msrk7")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
@@ -1529,7 +1530,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "ALINEACION"
-icon = ExtResource("7_vl208")
+icon = ExtResource("18_msrk7")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
@@ -1544,7 +1545,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "TACTICAS"
-icon = ExtResource("8_7y1o6")
+icon = ExtResource("19_msrk7")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
@@ -1559,7 +1560,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "VER RIVAL"
-icon = ExtResource("9_aqdmb")
+icon = ExtResource("20_msrk7")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
@@ -1606,7 +1607,7 @@ theme_override_fonts/font = ExtResource("4_asv7p")
 theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_i2nm8")
 text = "FICHAR"
-icon = ExtResource("10_tsv7u")
+icon = ExtResource("21_msrk7")
 icon_alignment = 1
 vertical_icon_alignment = 0
 expand_icon = true
